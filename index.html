@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/smart.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8fc5187318.js" crossorigin="anonymous"></script>
+    <title>Smart Education Dz</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="nav-branding"><img src="images/smart.ico" alt="">Smart<span>Edu</span>DZ</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Acceuil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Catégories</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Qui sommes-nous?</a></li>
+            </ul>
+            <a href=""  class="conbtn">Connexion</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+    </script>
+</body>
+</html>

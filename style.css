@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+@import url('https://fonts.cdnfonts.com/css/blanka');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Asap", sans-serif;
+}
+header{
+    background-color: #fff;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.navbar{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-branding{
+    font-size: 2rem;
+    font-family: 'Blanka', sans-serif;
+    color: #006F46;
+    padding: 10px 0;
+    border-bottom: 6px solid #000;
+}
+.nav-branding span{
+    font-size: 2rem;
+    font-family: 'Blanka', sans-serif;
+    color: #FFEB00;
+}
+.nav-branding img{
+    width: 70px;
+    height: 50px;
+}
+.nav-link{
+    transition: 0.2s ease;
+    font-size: 18px;
+    font-weight: 700;
+}
+.nav-link:hover{
+    color: #006F46;
+}
+.conbtn{
+    margin-right: 20px;
+    padding: 10px 20px;
+    color: #000;
+    border: 1px solid #006F46;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.conbtn:hover{
+    background-color: #006F46;
+    color: #fff;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
