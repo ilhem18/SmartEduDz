@@ -24,6 +24,65 @@
             </div>
         </nav>
     </header>
+    <section id="leading">
+        <div class="wrapper">
+            <div class="presentation">
+                <h1>Découvrez les enseignants les plus compétents dans votre ville.</h1>
+                <div class="search-box">
+                   <input type="text" placeholder="Matière" required>
+                   <select id="wilayaSelect">
+                    <option value="">Selectionner votre wilaya</option>
+                   </select>
+                   <button class="search-btn">Rechercher</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/tur.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <div class="title">
+            <h2>Choisissez une matière</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="matiere">
+                    <img src="images/calculating.png" alt="">
+                    <h2>Maths</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/einstein.png" alt="">
+                    <h2>Physique</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/microscope.png" alt="">
+                    <h2>Science</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/france.png" alt="">
+                    <h2>Français</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/united-kingdom.png" alt="">
+                    <h2>Anglais</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/spain.png" alt="">
+                    <h2>Espangole</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/germany.png" alt="">
+                    <h2>Allmand</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/arabic.png" alt="">
+                    <h2>Arabe</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -34,6 +93,31 @@
 
 
 
+
+
+    <script>
+        var wilayas = [
+        "Adrar","Chlef","Laghouat","Oum El Bouaghi","Batna",
+            "Bejaïa","Biskra","Bechar","Blida","Bouira","Tamanrasset",
+            "Tébessa","Tlemcen","Tiaret","Tizi Ouzou","Alger",
+            "Djelfa","Jijel","Sétif","Saïda","Skikda","Sidi Bel Abbès",
+            "Annaba","Guelma","Constantine","Médéa","Mostaganem",
+            "M'sila","Mascara","Ouargla","Oran","El Bayadh",
+            "Illizi","Bordj Bou Arreridj","Boumerdès","El Taref",
+            "Tindouf","Tissemsilt","El Oued","Khenchla","Souk Ahras",
+            "Tipaza","Mila","Ain Defla","Naâma","Ain Témouchent","Ghardaïa",
+            "Relizane","Timimoun","Bordj Badji Mokhtar","Ouled Djellal",
+            "Béni Abbès","In Salah","In Guezzam","Touggourt","Djanet",
+            "El M'Ghair", "El Meniaa"
+        ];
+        var selectElement = document.getElementById("wilayaSelect");
+        for(var i = 0; i <wilayas.length; i++){
+            var option = document.createElement("option");
+            option.text = wilayas[i];
+            option.value = wilayas[i];
+            selectElement.add(option);
+        }
+    </script>
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");

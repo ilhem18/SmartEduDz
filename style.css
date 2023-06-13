@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 @import url('https://fonts.cdnfonts.com/css/blanka');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Asap", sans-serif;
 }
+/*navbar css*/
 header{
     background-color: #fff;
 }
@@ -56,7 +57,8 @@ a{
     color: #006F46;
 }
 .conbtn{
-    margin-right: 20px;
+    margin-top: 25px;
+    margin-right: 15px;
     padding: 10px 20px;
     color: #000;
     border: 1px solid #006F46;
@@ -83,13 +85,103 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: #000;
 }
+/*fin navbar css*/
+
+/*leading css*/
+#leading{
+    max-width: 100%;
+    max-height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.presentation h1{
+    color: #446C5D;
+    margin-left: 50px;
+    font-size: 40px;
+    max-width: 80%;
+    line-height: 1.7;
+}
+.image img{
+    max-width: 90%;
+}
+/*search box*/
+.search-box{
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+.search-box input{
+    padding: 30px;
+    font-size: 16px;
+    height: 30px;
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #006F46;
+}
+.search-box select{
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #006F46;
+    border-radius: 0 20px 20px 0;
+    width: 40%;
+}
+.search-box option{
+    padding: 15px;
+    font-size: 17px;
+    background-color: #fff;
+}
+.search-box .search-btn{
+    padding:20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    color: #fff;
+    background: #006F46;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 10px 5px 5px #FFEB00;
+}
+
+/*fin leading css*/
 
 
-
-
-
-
-
+#categories{
+    max-width: 100%;
+    max-height: fit-content;
+    background: #446C5D;
+}
+.title h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+}
+.container .row{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    grid-gap: 20px;
+}
+.matiere{
+    width: 100%;
+    text-align: center;
+    padding: 50px 10px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 1.5rem 0 rgba(217, 237, 235, 0.125) !important;
+}
+.matiere img{
+    width: 40%;
+    padding: 30px;
+}
 
 
 
@@ -118,7 +210,7 @@ a{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 100px;
         gap: 0;
         flex-direction: column;
         background-color: #fff;
@@ -127,7 +219,7 @@ a{
         transition: 0.3s;
     }
     .nav-item{
-        margin: 16px 0;
+        margin: 20px 0;
     }
     .nav-menu.active{
         left: 0;
