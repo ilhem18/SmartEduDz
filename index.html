@@ -5,18 +5,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/smart.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8fc5187318.js" crossorigin="anonymous"></script>
-    <title>Smart Education Dz</title>
+    <title>Forum des enseignants dz</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a href="" class="nav-branding"><img src="images/smart.ico" alt="">Smart<span>Edu</span>DZ</a>
+            <a href="index.html" class="nav-branding"><img src="images/smart.ico" alt="">Forum enseignants<span>DZ</span</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Acceuil</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Catégories</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Qui sommes-nous?</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Acceuil</a></li>
+                <li class="nav-item"><a href="#categories" class="nav-link">Primaire</a></li>
+                <li class="nav-item"><a href="#categories" class="nav-link"></a>Moyenne</li>
+                <li class="nav-item"><a href="#categories" class="nav-link">Secondaire</a></li>
             </ul>
             <a href="login.html"  class="conbtn">Connexion</a>
+            <div class="conbtn" id="google_element"></div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -46,19 +48,35 @@
         <div class="title">
             <h2>Choisissez une matière</h2>
         </div>
-        <div class="container">
+        
             <div class="row">
                 <div class="matiere">
                     <img src="images/calculating.png" alt="">
-                    <h2>Maths</h2>
+                    <h2>الرياضيات</h2>
                 </div>
                 <div class="matiere">
                     <img src="images/einstein.png" alt="">
-                    <h2>Physique</h2>
+                    <h2>العلوم الفيزيائية</h2>
                 </div>
                 <div class="matiere">
                     <img src="images/microscope.png" alt="">
-                    <h2>Science</h2>
+                    <h2>العلوم الطبيعية</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/mecanism.png" alt="">
+                    <h2>الهندسة الميكانيكية</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/accounting.png" alt="">
+                    <h2>التسيير المحاسبي</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/economy.png" alt="">
+                    <h2>الإقتصاد</h2>
+                </div>
+                <div class="matiere">
+                    <img src="images/italy.png" alt="">
+                    <h2>Italien</h2>
                 </div>
                 <div class="matiere">
                     <img src="images/france.png" alt="">
@@ -70,7 +88,7 @@
                 </div>
                 <div class="matiere">
                     <img src="images/spain.png" alt="">
-                    <h2>Espangole</h2>
+                    <h2>Espangol</h2>
                 </div>
                 <div class="matiere">
                     <img src="images/germany.png" alt="">
@@ -78,22 +96,39 @@
                 </div>
                 <div class="matiere">
                     <img src="images/arabic.png" alt="">
-                    <h2>Arabe</h2>
+                    <h2>اللغة العربية</h2>
                 </div>
             </div>
-        </div>
+        
     </section>
 
 
 
+    <footer id="footer">
+        <div class="footer-content">
+            <a href="index.html" class="nav-branding"><img src="images/smart.ico" alt="">Smart<span>Edu</span>DZ</a>
+            <p>Trouvez l'enseignant le plus compétent dans votre ville en quelques clics.</p>
+            <ul class="propos">
+                <li><a href="">Qui sommes-nous?</a></li>
+                <li><a href="">Termes et conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 SmartEduDz. Developped by <span>DERDOUR ILHAM DEHIBA</span></p>
+        </div>
+    </footer>
 
 
 
 
 
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 
-
-
+    <script>
+        function loadGoogleTranslate(){
+            new google.translate.TranslateElement("google_element");
+        }
+    </script>
 
     <script>
         var wilayas = [

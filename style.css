@@ -153,20 +153,21 @@ a{
 #categories{
     max-width: 100%;
     max-height: fit-content;
-    background: #446C5D;
+    background: #fff;
 }
 .title h2{
     font-size: 50px;
     font-weight: 700;
-    color: #fff;
+    color: #006F46;
     text-align: center;
     justify-content: center;
     padding: 40px;
 }
-.container .row{
+.row{
+    padding: 0 30px;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(4, 1fr);   
     grid-gap: 20px;
 }
 .matiere{
@@ -174,7 +175,9 @@ a{
     text-align: center;
     padding: 50px 10px;
     font-size: 15px;
-    color: #fff;
+    background: #d1d1d1;
+    color: #000;
+    border-radius: 30px;
     cursor: pointer;
     box-shadow: 0 1.5rem 1.5rem 0 rgba(217, 237, 235, 0.125) !important;
 }
@@ -328,10 +331,56 @@ a{
 
 
 
-
-
-
-
+/*footer css*/
+footer{
+    position: relative;
+    bottom: 0;
+    background: #fff;
+    max-height: fit-content;
+    margin-top: 50px;
+    max-width: 100%;
+    color:  #333;
+}
+.footer-content{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    max-width: auto;
+    margin: 10px auto;
+    line-height: 28px;
+}
+.propos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.propos li{
+    margin: 0 10px;
+}
+.propos a{
+    text-decoration: none;
+    color: #000;
+}
+.propos a:hover{
+    color: #006F46;
+}
+.footer-bottom{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    color: #000;
+}
 
 
 @media(max-width: 768px){
